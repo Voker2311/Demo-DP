@@ -2,7 +2,7 @@ import React from 'react';
 import "./Header.css";
 import VpnKeyOutlinedIcon from '@material-ui/icons/VpnKeyOutlined';
 import PersonAddRoundedIcon from '@material-ui/icons/PersonAddRounded';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
 function Header() {
     return (
@@ -33,30 +33,47 @@ function Header() {
         //     </div>
         // </div>
         // Bootstrap
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
-                <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                </NavDropdown>
+        <>
+        <Navbar sticky="top" collapseOnSelect expand="lg" style={{ backgroundColor: '#3949ab'}} variant="dark">
+            <div>
+            <img className="logo" src="assets/heathcare.jpg" alt="logo" />
+            </div>
+            <Navbar.Brand href="#home" style={{fontSize: '23px'}}>🚀  CRYP70N1C</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                    <div className="links">
+                        <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#features">Contact Us</Nav.Link>
+                    </div>
+                    <div className="links">   
+                        <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing">Community</Nav.Link>
+                    </div>
+                    <div className="links">   
+                        <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing">COVID-19</Nav.Link>
+                    </div>
+                    {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    </NavDropdown> */}
                 </Nav>
-            <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-            </Nav.Link>
-            </Nav>
-        </Navbar.Collapse>
-        </Navbar>
-    
+                <Nav>
+                    <div className="links">
+                        <VpnKeyOutlinedIcon className="icon" style={{ color: '#76ff03' }}/>
+                        <Nav.Link className="link__name" href="#deets" style={{ color: 'white', fontSize: '16px' }}>Register</Nav.Link>
+                    </div>
+                    <div className="links">
+                    <PersonAddRoundedIcon className="icon" style={{ color: '#76ff03' }}/>
+                    <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} eventKey={2} href="#memes">
+                        Login
+                    </Nav.Link>
+                    </div>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar> 
+    </>
         )
 }
 
