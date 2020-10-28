@@ -1,0 +1,82 @@
+.header{
+    background-color: #1976d2;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height:75px;
+    font-family: 'Ubuntu',sans-serif; 
+}
+
+.header__image > img{
+    margin:12px;
+    height:50px;
+    width:58px;
+    border-radius:50%;
+    margin-left:2rem;
+}
+
+.header__image{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color:white;
+}
+
+.header__image > h3{
+    margin-left:0.2rem;
+    font-size:20px;
+}
+
+.header__register > a, .header__login > a{
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+    font-weight:400;
+    cursor: pointer;
+    padding:0 10px;
+}
+
+.header__contact{
+    flex:0.9;
+}
+
+.header__contact > a{
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+    font-weight:500;
+    cursor: pointer;
+    margin-right:2rem;
+}
+
+.header__tabs{
+    display: flex;
+}
+
+.header__title{
+    font-weight:500;
+    color:white;
+    font-size:17px;
+    cursor: pointer;
+}
+
+
+.header__register:hover, .header__login:hover{
+    background-color:#1565c0;
+}
+
+
+.header__register{
+    display: flex;
+    align-items: center;
+    flex:1;
+    padding:20px 10px;
+}
+
+.header__login{
+    display: flex;
+    align-items: center;
+    flex:1;
+    margin-right:2rem;
+    padding:20px 8px;
+}
