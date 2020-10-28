@@ -34,16 +34,19 @@ function Header() {
         // </div>
         // Bootstrap
         <>
-        <Navbar style={{scrollBehavior: 'smooth'}} fixed="top" collapseOnSelect expand="lg" style={{ backgroundColor: '#1976d2'}} variant="dark">
+        <Navbar sticky="top" collapseOnSelect expand="lg" style={{ backgroundColor: '#3949ab'}} variant="dark">
             <div>
             <img className="logo" src="assets/heathcare.jpg" alt="logo" />
             </div>
-            <Navbar.Brand href="#home" style={{fontSize: '23px'}}>CRYP70N1C</Navbar.Brand>
+            <Navbar.Brand href="#home" style={{fontSize: '23px'}}>🚀  CRYP70N1C</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                     <div className="links">
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#features">Contact Us</Nav.Link>
+                    </div>
+                    <div className="links">   
+                        <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing">Community</Nav.Link>
                     </div>
                     <div className="links">   
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing">COVID-19</Nav.Link>
@@ -58,11 +61,11 @@ function Header() {
                 </Nav>
                 <Nav>
                     <div className="links">
-                        <VpnKeyOutlinedIcon className="icon" style={{ color: '#3e2723' }}/>
+                        <VpnKeyOutlinedIcon className="icon" style={{ color: '#76ff03' }}/>
                         <Nav.Link className="link__name" href="#deets" style={{ color: 'white', fontSize: '16px' }}>Register</Nav.Link>
                     </div>
                     <div className="links">
-                    <PersonAddRoundedIcon className="icon" style={{ color: '#3e2723' }}/>
+                    <PersonAddRoundedIcon className="icon" style={{ color: '#76ff03' }}/>
                     <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} eventKey={2} href="#memes">
                         Login
                     </Nav.Link>
