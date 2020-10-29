@@ -1,7 +1,27 @@
-.carousel {
-  display: flex;
-  margin: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  width: 600px;
+.welcome{
+    display:flex; 
+    background: url("https://cdn.wallpapersafari.com/60/63/AZfjHE.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome__part{
+    flex:0.8;
+    text-align: center;
+} 
+
+.welcome__part > div > h2{
+    margin-top:30px;
+    padding-bottom: 10px;
+}
+
+.welcome__part > div{
+    max-width:1000px;
+    margin: 41px auto;
+}
+
+
+.welcome__widget{
+    flex:0.2;
+    margin:40px;
 }

@@ -1,50 +1,26 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
-import Footer from "./Footer";
-import Header from "./Header";
 import "./Welcome.css";
+import Carousel from "./Carousel1";
+import Widget from "./Widget";
+
 function Welcome() {
   return (
-    <div className="container">
-      <div className="carousel">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68"
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h3>CRYP70N1C</h3>
-              <p>Hello!</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://i.picsum.photos/id/1/5616/3744.jpg?hmac=kKHwwU8s46oNettHKwJ24qOlIAsWN9d2TtsXDoCWWsQ"
-              alt="Third slide"
-            />
+    <div className="welcome">
+        <div className="welcome__part">
+            <Carousel />
+            <div>
+                <h2>Welcome to Doctor-Patient Portal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, numquam accusamus. Repellat exercitationem suscipit error, perferendis ducimus debitis nam sit quis hic officiis illo veniam, asperiores earum, nisi molestias adipisci.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, numquam accusamus. Repellat exercitationem suscipit error, perferendis ducimus debitis nam sit quis hic officiis illo veniam, asperiores earum, nisi molestias adipisci.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, numquam accusamus. Repellat exercitationem suscipit error, perferendis ducimus debitis nam sit quis hic officiis illo veniam, asperiores earum, nisi molestias adipisci.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, numquam accusamus. Repellat exercitationem suscipit error, perferendis ducimus debitis nam sit quis hic officiis illo veniam, asperiores earum, nisi molestias adipisci.</p>
+            </div>
+        </div>
 
-            <Carousel.Caption>
-              <h3>CRYP70N1C</h3>
-              <p>Hello!</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68"
-              alt="Third slide"
-            />
+        <div className="welcome__widget">
+            <Widget />
+        </div>
 
-            <Carousel.Caption>
-              <h3>CRYP70N1C</h3>
-              <p>Hello!</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </div>
     </div>
   );
 }
