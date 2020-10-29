@@ -1,0 +1,55 @@
+.loginAs {
+    text-align: center;
+    height: 70vh;
+    background: url('https://st.depositphotos.com/1005680/3801/v/950/depositphotos_38012121-stock-illustration-vector-background-with-blue-flowers.jpg');
+    background-size: fill;
+    background-repeat: no-repeat;
+}
+.loginAs > h3 {
+    margin-top:120px;
+    font-weight: 700;
+}
+
+.images {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.imag > img:hover, .imag2 > img:hover {
+    transform: scale(1.08);
+}
+
+.imag > img {
+    height: 181px;
+    width: 181px;
+    border-radius: 50%;
+    margin-top: 10px;  
+    background-color: #eed;
+    box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
+    -moz-box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
+    -o-box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
+    transition: all .2s ease-in-out;
+}
+
+.imag2 > img {
+    height: 1885x;
+    width: 185px;
+    margin-left: 20px;
+    border-radius: 50%;
+    
+    background-color: #eed;
+    box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
+    -moz-box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
+    -o-box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
+    transition: all .2s ease-in-out;
+}
+
+.imag > h5, .imag2 > h5 {
+
+    margin-top: 20px;
+    font-weight: 600;
+}
