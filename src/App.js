@@ -2,24 +2,48 @@ import './App.css';
 import Footer from './Footer';
 import Header from "./Header";
 import LoginAs from './LoginAs';
+import Login from "./Login";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Welcome from './Welcome';
+
 
 function App() {
   return (
     <div className="app">
     {/* Header componenet */}
-      <div>
-      <Header />
-      </div>
 
-         <div>
+
+        <Router>
+        <Header />
+          <Switch>
+            <Route path="/loginAs">
+              <LoginAs />
+            </Route>
+
+            <Route path="/login">
+                  <Login />
+            </Route>
+
+            <Route path="/">
+              <Welcome />
+            </Route>
+
+          </Switch>
+          <Footer />
+        </Router>
+
+    
+        {/* Login Component
+        <div>
          <LoginAs className="loginAs" />
-         </div>
+        </div> */}
 
-        
-    <div>
-    <Footer />
-    </div>
-        
+            
     </div>
   );
 }

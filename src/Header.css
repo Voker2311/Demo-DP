@@ -15,6 +15,8 @@
     display: flex;
     align-items: center;
     padding: 10px 5px;
+    text-decoration:none;
+    color:white;
 
 }
 
@@ -22,6 +24,17 @@
     background-color:#283593;
     border-radius: 5px;
     font-weight: 600;
+    color:white;
+    text-decoration: none;
+}
+
+.router__link{
+    text-decoration: none;
+    color:white;
+}
+.router__link:hover{
+    color:white;
+    text-decoration: none;
 }
 
 .icon {
