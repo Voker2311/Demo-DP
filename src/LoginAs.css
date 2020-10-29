@@ -27,7 +27,7 @@
     border-radius: 50%;
     margin-top: 10px;  
     background-color: #eed;
-    box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
+    box-shadow: -10px 10px 5px rgba(0,0,0,0.6);
     -moz-box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
     -webkit-box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
     -o-box-shadow: -10px 10px   5px rgba(0,0,0,0.6);
@@ -48,8 +48,23 @@
     transition: all .2s ease-in-out;
 }
 
-.imag > h5, .imag2 > h5 {
+.imag > h5{
 
     margin-top: 20px;
     font-weight: 600;
 }
+
+.imag2 > h5 {
+    margin-top:25px;
+    font-weight:600;
+}
+
+.login__link{
+    color:#ff9800;
+}
+
+.login__link:hover{
+    text-decoration: none;
+    color:
+}
+

@@ -3,6 +3,7 @@ import "./Header.css";
 import VpnKeyOutlinedIcon from '@material-ui/icons/VpnKeyOutlined';
 import PersonAddRoundedIcon from '@material-ui/icons/PersonAddRounded';
 import { Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -38,7 +39,12 @@ function Header() {
             <div>
             <img className="logo" src="assets/heathcare.jpg" alt="logo" />
             </div>
-            <Navbar.Brand href="#home" style={{fontSize: '23px'}}>🚀  CRYP70N1C</Navbar.Brand>
+            <Navbar.Brand href="#home" style={{fontSize: '23px'}}>
+                <Link to="/" className="router__link">
+                    🚀  CRYP70N1C
+                </Link>
+            
+            </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
@@ -62,12 +68,20 @@ function Header() {
                 <Nav>
                     <div className="links">
                         <VpnKeyOutlinedIcon className="icon" style={{ color: '#76ff03' }}/>
-                        <Nav.Link className="link__name" href="#deets" style={{ color: 'white', fontSize: '16px' }}>Register</Nav.Link>
+                        <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }}>
+                        <Link to="/register" class="router__link">
+                            Register
+                        </Link>
+                        </Nav.Link>
                     </div>
                     <div className="links">
                     <PersonAddRoundedIcon className="icon" style={{ color: '#76ff03' }}/>
-                    <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} eventKey={2} href="#memes">
-                        Login
+                    <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} eventKey={2} >
+                        
+                        <Link to="/loginAs" className="router__link">
+                            Login
+                        </Link>
+
                     </Nav.Link>
                     </div>
                 </Nav>
@@ -77,4 +91,4 @@ function Header() {
         )
 }
 
-export default Header
+export default Header;
