@@ -6,7 +6,7 @@ const styles = theme => ({
         marginRight:theme.spacing.unit,
         marginBottom:"75px",
         [theme.breakpoints.up("sm")]:{
-            width:400,
+            width:500,
             marginLeft:"auto",
             marginRight:"auto"
         },
@@ -24,11 +24,13 @@ const styles = theme => ({
     },
     form:{
         marginTop:theme.spacing.unit,
-        padding:theme.spacing.unit,  
+        padding:theme.spacing.unit, 
+        
     },
     submit:{
         marginTop:theme.spacing.unit * 3,
-        backgroundColor:"#f57c00"
+        backgroundColor:"#dc004e",
+        fontWeight:"700"
     }
 })
 

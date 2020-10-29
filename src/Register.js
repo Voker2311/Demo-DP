@@ -13,7 +13,7 @@ function Register(props) {
                     <Avatar className={classes.avatar}>
                         <AssignmentIndIcon />
                     </Avatar>
-                    <Typography variant="h5">Registeration</Typography>
+                    <Typography variant="h5">Registration</Typography>
                     <form className={classes.form}>
                         <FormControl margin="normal" required fullWidth>
                             <InputLabel htmlFor="username">Username</InputLabel>
