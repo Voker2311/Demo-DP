@@ -9,6 +9,7 @@ import {
   Route
 } from "react-router-dom";
 import Welcome from './Welcome';
+import Register from './Register';
 
 
 function App() {
@@ -18,22 +19,26 @@ function App() {
 
 
         <Router>
-        <Header />
-          <Switch>
-            <Route path="/loginAs">
-              <LoginAs />
-            </Route>
+          <Header />
+            <Switch>
+              <Route path="/register">
+                  <Register />
+              </Route>
 
-            <Route path="/login">
-                  <Login />
-            </Route>
+              <Route path="/loginAs">
+                <LoginAs />
+              </Route>
 
-            <Route path="/">
-              <Welcome />
-            </Route>
+              <Route path="/login">
+                    <Login />
+              </Route>
 
-          </Switch>
-          <Footer />
+              <Route path="/">
+                <Welcome />
+              </Route>
+
+            </Switch>
+            <Footer />
         </Router>
 
     

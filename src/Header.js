@@ -67,18 +67,18 @@ function Header() {
                 </Nav>
                 <Nav>
                     <div className="links">
-                        <VpnKeyOutlinedIcon className="icon" style={{ color: '#76ff03' }}/>
+                        <PersonAddRoundedIcon className="icon" style={{ color: '#fff' }}/>
+                        
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }}>
-                        <Link to="/register" class="router__link">
+                        <Link to="/loginAs" class="router__link">
                             Register
                         </Link>
                         </Nav.Link>
                     </div>
                     <div className="links">
-                    <PersonAddRoundedIcon className="icon" style={{ color: '#76ff03' }}/>
                     <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} eventKey={2} >
-                        
-                        <Link to="/loginAs" className="router__link">
+                        <VpnKeyOutlinedIcon className="icon" style={{ color: '#fff' }}/>
+                        <Link to="/login" className="router__link">
                             Login
                         </Link>
 
