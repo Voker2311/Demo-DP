@@ -1,71 +1,25 @@
 import './App.css';
 import Footer from './Footer';
 import Header from "./Header";
+import LoginAs from './LoginAs';
 
 function App() {
   return (
     <div className="app">
     {/* Header componenet */}
+      <div>
+      <Header />
+      </div>
 
-    <Header />
-        {/* <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
+         <div>
+         <LoginAs className="loginAs" />
+         </div>
 
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis exercitationem amet nulla tenetur a, animi sint itaque id consectetur debitis voluptatibus modi possimus fugit enim maiores. Tempore eveniet cupiditate labore.
-        </div>
-  */}
-        <Footer />
+        
+    <div>
+    <Footer />
+    </div>
+        
     </div>
   );
 }
