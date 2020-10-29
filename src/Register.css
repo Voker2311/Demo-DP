@@ -1,8 +1,10 @@
 .register{
     background: url('https://st.depositphotos.com/1005680/3801/v/950/depositphotos_38012121-stock-illustration-vector-background-with-blue-flowers.jpg');
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: contain;
+    margin-bottom: 0;
 }
+
 
 .register > main{
     border-radius:5%;

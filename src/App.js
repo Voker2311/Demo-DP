@@ -6,8 +6,7 @@ import Login from "./Login";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Welcome from './Welcome';
 import Register from './Register';

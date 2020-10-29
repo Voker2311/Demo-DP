@@ -31,6 +31,12 @@ const styles = theme => ({
         marginTop:theme.spacing.unit * 3,
         backgroundColor:"#dc004e",
         fontWeight:"700"
+    },
+    radio:{
+        marginTop:theme.spacing.unit * 2,
+    },
+    email:{
+        marginTop:"-10px"
     }
 })
 
