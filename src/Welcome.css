@@ -1,0 +1,11 @@
+.welcome{
+    display: flex;
+}
+
+.welcome__screen{
+    flex:0.8;
+}
+
+.welcome__widget{
+    flex:0.2;
+}

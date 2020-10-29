@@ -22,7 +22,7 @@ const styles = theme => ({
     },
     avatar:{
         margin:theme.spacing.unit,
-        backgroundColor:theme.palette.secondary.main
+        backgroundColor:"#dc004e"
     },
     form:{
         width:"100%",
@@ -30,7 +30,9 @@ const styles = theme => ({
         padding:theme.spacing.unit
     },
     submit:{
-        marginTop:theme.spacing.unit * 3
+        marginTop:theme.spacing.unit * 3,
+        backgroundColor:"#f57c00",
+        fontWeight:"700",
     },
     submit1:{
         marginTop:theme.spacing.unit * 3,

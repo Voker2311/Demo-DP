@@ -25,7 +25,7 @@ function Login(props) {
                 <Avatar className={ classes.avatar }>
                     <LockOutlinedIcon />
                 </Avatar>
-                <Typography variant="h5">Log In As patient</Typography>
+                <Typography variant="h5">Sign In As patient</Typography>
                 <form className={classes.form}>
                     <FormControl margin="normal" required fullWidth>
                         <InputLabel htmlFor="email">Email</InputLabel>
@@ -36,7 +36,7 @@ function Login(props) {
                         <Input  type="password" name="password" id="password" autoFocus></Input>
                     </FormControl>
                     <FormControlLabel className={classes.remember}variant="h5" label="Remember Me" control={<Checkbox color="primary" />}/>
-                    <Button variant="contained" type="submit" fullWidth color="primary" className={classes.submit }>Log In</Button>
+                    <Button variant="contained" type="submit" fullWidth color="primary" className={classes.submit}>SIGN IN</Button>
                 </form>
             </Paper>
        </main>
