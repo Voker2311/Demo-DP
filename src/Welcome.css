@@ -1,7 +1,11 @@
 .carousel {
   display: flex;
-  margin: auto;
-  margin-bottom: 20px;
   margin-top: 20px;
-  width: 600px;
+  margin-right: 40px;
+  width: 800px;
+  height: 400px;
+}
+
+.caption {
+    
 }
