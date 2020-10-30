@@ -55,7 +55,7 @@ function Header() {
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing">Community</Nav.Link>
                     </div>
                     <div className="links">   
-                        <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing">COVID-19</Nav.Link>
+                        <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing"><Link to="/patient" className="router__link">COVID-19</Link></Nav.Link>
                     </div>
                     {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -70,7 +70,7 @@ function Header() {
                         <PersonAddRoundedIcon className="icon" style={{ color: '#fff' }}/>
                         
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }}>
-                        <Link to="/register" class="router__link">
+                        <Link to="/loginAs" class="router__link">
                             Register
                         </Link>
                         </Nav.Link>
@@ -78,7 +78,7 @@ function Header() {
                     <div className="links">
                     <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} eventKey={2} >
                         <VpnKeyOutlinedIcon className="icon" style={{ color: '#fff' }}/>
-                        <Link to="/loginAs" className="router__link">
+                        <Link to="/login" className="router__link">
                             Login
                         </Link>
 

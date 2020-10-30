@@ -4,9 +4,11 @@
   background: url("https://st.depositphotos.com/1005680/3801/v/950/depositphotos_38012121-stock-illustration-vector-background-with-blue-flowers.jpg");
   background-size: fill;
   background-repeat: no-repeat;
+  margin-right: 200px;
 }
 .loginAs > h3 {
   margin-top: 120px;
+  margin-left: 200px;
   font-weight: 700;
 }
 
