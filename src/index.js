@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { StateProvider } from './StateProvider';
 import { initialState, reducer } from './reducer';
 
-
 ReactDOM.render(
   <StateProvider initialState={initialState} reducer={reducer}>
   <React.StrictMode>
