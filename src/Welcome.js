@@ -18,7 +18,7 @@ function Welcome() {
         </div>
 
         <div className="welcome__widget">
-            <Widget />
+            <Widget width="380" />
         </div>
 
     </div>

@@ -2,14 +2,14 @@
     display: flex;
     margin: auto;
     margin-bottom: 20px;
-    width: 1000px;
+    width: 800px;
     height:400px;
     border-radius: 10px;
     overflow: hidden;
   }
 
   .slide-image{
-      object-fit: contain;
+      object-fit: fill;
       max-height:400px;
   }
   

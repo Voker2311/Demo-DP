@@ -1,0 +1,32 @@
+.patient{
+    display:flex;
+ 
+}
+
+.patient__left{
+    flex:0.2;
+    border-right: 3px double gray;
+    margin: 10px 0px 10px 10px;
+    padding-right: 5px;
+}
+
+.patient__both {
+    display: flex;
+    flex: 0.8;
+    background-color: #fafafa;
+}
+
+.patient__middle{
+    margin: 15px;
+    flex:0.8;
+    
+}
+
+.patient__widget{
+    margin: 15px;
+    flex:0.2;
+    
+}
+
+
+
