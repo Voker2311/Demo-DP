@@ -22,7 +22,7 @@ function LoginAs() {
 
     return (
         <div className="loginAs">
-            <h3>Login As</h3>
+            <h2>Register As</h2>
             <div className="images">
             <Link to="/register" onClick={patientSelected} className="login__link">
                 <div className="imag">

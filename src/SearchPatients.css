@@ -1,0 +1,25 @@
+.inpu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inpu > input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline-width: 0;
+}
+
+.inpu > Button {
+    padding: 10px;
+}
+
+.cardi:hover {
+    transform: scale(1.0);
+    cursor: unset;
+}
+
+.ankit{
+    margin-left:10px;
+}
