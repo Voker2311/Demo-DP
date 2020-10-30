@@ -39,9 +39,9 @@ function Header() {
             <div>
             <img className="logo" src="assets/heathcare.jpg" alt="logo" />
             </div>
-            <Navbar.Brand href="#home" style={{fontSize: '23px'}}>
+            <Navbar.Brand  style={{fontSize: '23px'}}>
                 <Link to="/" className="router__link">
-                    🚀  CRYP70N1C
+                      CRYP70N1C
                 </Link>
             
             </Navbar.Brand>
