@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Welcome from './Welcome';
 import Register from './Register';
+import Patient from './Patient';
 
 
 function App() {
@@ -31,6 +32,14 @@ function App() {
 
               <Route path="/login">
                     <Login />
+              </Route>
+
+              {/* <Route path="/patient">
+                <Patient />
+              </Route> */}
+
+              <Route path="/patient">
+                <Patient />
               </Route>
 
               <Route path="/">

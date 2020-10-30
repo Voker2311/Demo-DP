@@ -16,6 +16,19 @@ function Carousel1() {
                  
                     </Carousel.Caption>
                 </Carousel.Item>
+
+                <Carousel.Item>
+                    <img
+                    className="d-block w-100 slide-image"
+                    src="https://www.themall.co.uk/media/410989/hfs-content.png?width=630"
+                    alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                
+                    </Carousel.Caption>
+                </Carousel.Item>
+                
                 <Carousel.Item>
                     <img
                     className="d-block w-100 slide-image"
@@ -27,17 +40,7 @@ function Carousel1() {
                    
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100 slide-image"
-                    src="https://infographicnow.com/wp-content/uploads/2019/07/Statistics-infographic-This-workplace-safety-statistics-infographic-shows-the.jpg"
-                    alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
                 
-                    </Carousel.Caption>
-                </Carousel.Item>
             </Carousel>
         </div>
     )

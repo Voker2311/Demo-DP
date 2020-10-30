@@ -1,4 +1,4 @@
-import { Avatar, Button, FormControl, FormControlLabel, FormLabel, Input, InputLabel, Paper, Radio, RadioGroup, Typography, withStyles } from '@material-ui/core';
+import { Avatar, Button, FormControl, FormControlLabel, FormLabel, Input, InputLabel, Paper, Radio, RadioGroup, TextField, Typography, withStyles } from '@material-ui/core';
 import React from 'react';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import styles from './styles/RegisterStyles';
@@ -44,7 +44,18 @@ function Register(props) {
                             </div>
                         </RadioGroup>
                         </FormControl>
-                        
+                        <FormControl className={classes.container} style={{color: 'black'}}>
+                            <FormLabel className={classes.dob} component="legend" style={{color: 'black'}}>DOB *</FormLabel>
+                            <TextField
+                                id="date"
+                                type="date"
+                                defaultValue=""
+                                className={classes.textField}
+                                InputLabelProps={{
+                                shrink: true,
+                                }}
+                            />  
+                         </FormControl>                                        
                         <FormControl className={classes.email} margin="normal" required fullWidth>
                             <InputLabel htmlFor="email" style={{color: 'black'}}>Email</InputLabel>
                             <Input type="email" name="email" spellCheck="false" autoFocus></Input>
