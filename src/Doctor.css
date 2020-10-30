@@ -1,0 +1,29 @@
+.doctor{
+    display:flex;
+ 
+}
+
+.doctor__left{
+    flex:0.2;
+    border-right: 3px double gray;
+    margin: 10px 0px 10px 10px;
+    padding-right: 5px;
+}
+
+.doctor__both {
+    display: flex;
+    flex: 0.8;
+    background-color: #fafafa;
+}
+
+.doctor__middle{
+    margin: 15px;
+    flex:0.8;
+    
+}
+
+.doctor__widget{
+    margin: 15px;
+    flex:0.2;
+    
+}

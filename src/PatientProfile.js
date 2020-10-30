@@ -3,10 +3,11 @@ import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import "./PatientProfile.css";
 import BlockIcon from '@material-ui/icons/Block';
-import EditIcon from '@material-ui/icons/Edit';
+import { useStateValue } from './StateProvider';
 
 
 function PatientProfile(props) {
+    const [{user}, dispatch] = useStateValue()
 
     return (
         <div onClick={e => e.stopPropagation()}>
@@ -29,11 +30,11 @@ function PatientProfile(props) {
               <h6><strong>DOB:</strong> 14-08-2000</h6>
               <h6><strong>Gender:</strong> Male</h6>
               <h6><strong>Email:</strong> khushalthepane@gmail.com</h6>
+              {user === "doctor" && <h6><strong>Doctor ID:</strong> 18102B0029</h6>}
 
             </Modal.Body>
           </div>
           <Modal.Footer style={{backgroundColor: '#424242', color:'white', display:'flex'}}>
-              <Button variant="primary"><i><EditIcon /></i> Edit</Button>  
               <Button variant="danger" onClick={props.onHide}><i><BlockIcon /></i> Close</Button>         
           </Modal.Footer>
         </Modal>

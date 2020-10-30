@@ -11,6 +11,7 @@ import {
 import Welcome from './Welcome';
 import Register from './Register';
 import Patient from './Patient';
+import Doctor from './Doctor';
 
 
 function App() {
@@ -40,6 +41,10 @@ function App() {
 
               <Route path="/patient">
                 <Patient />
+              </Route>
+
+              <Route path="/doctor">
+                <Doctor />
               </Route>
 
               <Route path="/">

@@ -8,18 +8,18 @@ function DoctorList({image, name, treatment}) {
         <ListGroup> 
             <ListGroup.Item>
                 <CardColumns>
-                    <Card style={{ width: '250px'}}>
+                    <Card style={{ width: '285px'}}>
                         <Card.Img variant="top" className="doctor__image" src={image} />
                         <Card.Body>
                         <Card.Title><strong>Name: {name}</strong></Card.Title>
                         <Card.Text>
                             <strong>Treated: </strong>{treatment}
                         </Card.Text>
-                        <Button variant="primary"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
+                        <Button variant="info"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
                         </Card.Body>
                     </Card>
                     
-                    <Card style={{ width: '250px' }}>
+                    <Card style={{ width: '285px' }}>
                         <Card.Img variant="top" className="doctor__image" src={image} />
                         <Card.Body>
                         <Card.Title><strong>Name: {name}</strong></Card.Title>
@@ -27,11 +27,11 @@ function DoctorList({image, name, treatment}) {
                             <strong>Treated: </strong>{treatment}
                         </Card.Text>
                         
-                        <Button variant="primary"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
+                        <Button variant="info"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
                         </Card.Body>
                     </Card>
             
-                    <Card style={{ width: '250px' }}>
+                    <Card style={{ width: '285px' }}>
                         <Card.Img variant="top" className="doctor__image" src={image} />
                         <Card.Body>
                         <Card.Title><strong>Name: {name}</strong></Card.Title>
@@ -39,11 +39,11 @@ function DoctorList({image, name, treatment}) {
                             <strong>Treated: </strong>{treatment}
                         </Card.Text>
                         
-                        <Button variant="primary"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
+                        <Button variant="info"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
                         </Card.Body>
                     </Card>
 
-                    <Card style={{ width: '250px' }}>
+                    <Card style={{ width: '285px' }}>
                         <Card.Img variant="top" className="doctor__image" src={image} />
                         <Card.Body>
                         <Card.Title><strong>Name: {name}</strong></Card.Title>
@@ -51,10 +51,10 @@ function DoctorList({image, name, treatment}) {
                             <strong>Treated: </strong>{treatment}
                         </Card.Text>
                         
-                        <Button variant="primary"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
+                        <Button variant="info"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
                         </Card.Body>
                     </Card>
-                    <Card style={{ width: '250px' }}>
+                    <Card style={{ width: '285px' }}>
                         <Card.Img variant="top" className="doctor__image" src={image} />
                         <Card.Body>
                         <Card.Title><strong>Name: {name}</strong></Card.Title>
@@ -62,10 +62,10 @@ function DoctorList({image, name, treatment}) {
                             <strong>Treated: </strong>{treatment}
                         </Card.Text>
                         
-                        <Button variant="primary"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
+                        <Button variant="info"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
                         </Card.Body>
                     </Card>
-                    <Card style={{ width: '250px' }}>
+                    <Card style={{ width: '285px' }}>
                         <Card.Img variant="top" className="doctor__image" src={image} />
                         <Card.Body>
                         <Card.Title><strong>Name: {name}</strong></Card.Title>
@@ -73,7 +73,7 @@ function DoctorList({image, name, treatment}) {
                             <strong>Treated: </strong>{treatment}
                         </Card.Text>
                         
-                        <Button variant="primary"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
+                        <Button variant="info"><Link style={{color: 'white', textDecoration: 'none'}}>View Profile</Link></Button>
                         </Card.Body>
                     </Card>
                 </CardColumns>

@@ -7,33 +7,6 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        // <div className="header">
-        //     <div className="header__image">
-        //         <img src="assets/heathcare.jpg" />
-        //         <h3>CRYP70N1C</h3>
-        //     </div>
-
-        //     <div className="header__contact">
-        //         <a href="#">Contact Us</a>
-        //         <a href="#">Covid Tracker</a>
-        //     </div>
-
-            
-        //     <div className="header__tabs">
-        //         {/* Link router */}
-        //         <div className="header__register">
-        //             <VpnKeyOutlinedIcon style={{ color: '#424242' }}/>
-        //             <a href="#">Register</a>
-        //         </div>
-
-        //         <div className="header__login">
-        //             <PersonAddRoundedIcon style={{ color: '#424242' }}/>
-        //             <a href="#">Login</a>
-        //         </div>
-               
-        //     </div>
-        // </div>
-        // Bootstrap
         <>
         <Navbar sticky="top" collapseOnSelect expand="lg" style={{ backgroundColor: '#3949ab'}} variant="dark">
             <div>
@@ -51,19 +24,18 @@ function Header() {
                     <div className="links">
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#features">Contact Us</Nav.Link>
                     </div>
-                    <div className="links">   
+                    <div className="links">
+                        <Link to="/doctor">
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing">Community</Nav.Link>
+                  
+                        </Link>   
                     </div>
-                    <div className="links">   
-                        <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing"><Link to="/patient" className="router__link">COVID-19</Link></Nav.Link>
-                    </div>
-                    {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                    </NavDropdown> */}
+                    <Link to="/patient" className="router__link">
+                        <div className="links">   
+                            <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing">COVID-19</Nav.Link>
+                        </div>
+                    </Link>
+            
                 </Nav>
                 <Nav>
                     <div className="links">
