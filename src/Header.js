@@ -40,7 +40,7 @@ function Header() {
             
                 </Nav>
                 <Nav>
-                    {/* <div className="links">
+                    <div className="links">
                         <PersonAddRoundedIcon className="icon" style={{ color: '#fff' }}/>
                         
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }}>
@@ -57,8 +57,8 @@ function Header() {
                         </Link>
 
                     </Nav.Link>
-                    </div> */}
-                    <div className="links" style={{paddingRight: '5px'}}>
+                    </div>
+                    {/* <div className="links" style={{paddingRight: '5px'}}>
                     <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} eventKey={2} >
                         <div style={{display: 'flex', maxWidth: '100px'}}>
                         <Avatar style={{}} />
@@ -78,7 +78,7 @@ function Header() {
                         </Link>
 
                     </Nav.Link>
-                    </div>
+                    </div> */}
                 </Nav>
             </Navbar.Collapse>
         </Navbar> 
