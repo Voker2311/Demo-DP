@@ -3,7 +3,9 @@ import "./Header.css";
 import VpnKeyOutlinedIcon from '@material-ui/icons/VpnKeyOutlined';
 import PersonAddRoundedIcon from '@material-ui/icons/PersonAddRounded';
 import { Nav, Navbar } from 'react-bootstrap';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { Link } from 'react-router-dom';
+import { Avatar } from '@material-ui/core';
 
 function Header() {
     return (
@@ -38,7 +40,7 @@ function Header() {
             
                 </Nav>
                 <Nav>
-                    <div className="links">
+                    {/* <div className="links">
                         <PersonAddRoundedIcon className="icon" style={{ color: '#fff' }}/>
                         
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }}>
@@ -52,6 +54,27 @@ function Header() {
                         <VpnKeyOutlinedIcon className="icon" style={{ color: '#fff' }}/>
                         <Link to="/login" className="router__link">
                             Login
+                        </Link>
+
+                    </Nav.Link>
+                    </div> */}
+                    <div className="links" style={{paddingRight: '5px'}}>
+                    <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} eventKey={2} >
+                        <div style={{display: 'flex', maxWidth: '100px'}}>
+                        <Avatar style={{}} />
+                        <Link style={{textAlign: 'center', marginLeft: '10px'}} to="/login" className="router__link">
+                            khushal Thepane
+                        </Link>
+                        </div>
+                        
+
+                    </Nav.Link>
+                    </div>
+                    <div className="links">
+                    <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} eventKey={2} >
+                        <ExitToAppIcon className="icon" style={{ color: '#fff' }}/>
+                        <Link to="/login" className="router__link">
+                            Logout
                         </Link>
 
                     </Nav.Link>

@@ -5,11 +5,11 @@ import './Treatment.css'
 function Treatment({disease, description, doctor, hospital, medicine}) {
     return (
         <div>
-            <Card style={{border: '2px solid #2e7d32', backgroundColor: '#fafafa'}}>
+            <Card className="card1">
                 <Card.Body>
                 <ListGroup variant="flush">
                     <ListGroup.Item style={{backgroundColor: '#1de9b6', marginBottom: '20px',borderRadius:'10px'}}>
-                            <Card style={{ width: '50rem' }}>
+                            <Card className="card2" style={{ width: '50rem' }}>
                             
                             <Card.Body>
                                 <Card.Title><strong>Cured:</strong> {disease}</Card.Title>

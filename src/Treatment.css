@@ -1,0 +1,17 @@
+.card1 {
+    background-color: #fafafa !important;
+    border: 2px solid #2e7d32 !important;
+    width: 50rem !important;
+}
+
+.card1:hover {
+    transform: scale(1.0) !important;
+}
+
+.card2 {
+    width: 44rem !important;
+}
+
+.card2:hover {
+    transform: scale(1.0) !important;
+}

@@ -1,15 +1,16 @@
 import React from 'react'
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
+import './Condition.css'
 
 function Condition({condition, allergy, cIntensity, aIntensity}) {
     return (
         <div class="condition">
-            <Card style={{'border': '1px solid black',borderRadius:'5px', backgroundColor:'#1de9b6'}}>
+            <Card className="card3">
             <Card.Body>
             <ListGroup variant="flush">
             {condition && (
                    <ListGroup.Item style={{ marginBottom: '20px',borderBottom:'1px solid gray', paddingBottom: '25px', borderRadius: '8px'}}>
-                            <Card style={{ width: '50rem', borderRadius: '20px', border: '1px solid gray' }}>
+                            <Card className="card4" >
                                 <Card.Body>                                   
                                     <Card.Title><strong>Condition:</strong> {condition}</Card.Title>
                                     <Card.Text><strong>Intensity: </strong> 
@@ -24,7 +25,7 @@ function Condition({condition, allergy, cIntensity, aIntensity}) {
                    
 
                    {allergy && (<ListGroup.Item style={{ paddingBottom:'25px',borderRadius:'8px'}}>
-                            <Card style={{ width: '50rem', borderRadius:'20px', border:'1px solid gray' }}>
+                            <Card className="card4">
                             
                             <Card.Body>
                                 <Card.Title><strong>Allegry:</strong> {allergy}</Card.Title>

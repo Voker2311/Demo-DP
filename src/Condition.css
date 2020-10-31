@@ -1,0 +1,22 @@
+.card3 {
+    border: 1px solid black !important;
+    border-radius:5px !important;
+    background-color:#1de9b6 !important;
+    width: 50rem !important;
+}
+
+.card3:hover {
+    transform: scale(1.0) !important;
+}
+
+.card4 {
+    width: 44rem !important;
+    border-radius: 20px !important;
+    border: 1px solid gray !important; 
+    margin: -2px !important;
+}
+
+
+.card4:hover {
+    transform: scale(1.0) !important;
+}
