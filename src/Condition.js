@@ -12,10 +12,8 @@ function Condition({condition, allergy, cIntensity, aIntensity}) {
                    <ListGroup.Item style={{ marginBottom: '20px',borderBottom:'1px solid gray', paddingBottom: '25px', borderRadius: '8px'}}>
                             <Card className="card4" >
                                 <Card.Body>                                   
-                                    <Card.Title><strong>Condition:</strong> {condition}</Card.Title>
-                                    <Card.Text><strong>Intensity: </strong> 
-                                        {cIntensity}
-                                    </Card.Text>
+                                    <Card.Text><strong>Condition:</strong> {condition}  <strong>Intensity:</strong> {cIntensity}</Card.Text>
+                                    <Card.Text><strong>Condition:</strong> High BP  <strong>Intensity:</strong> Moderate</Card.Text>
                                     <Card.Text><strong>Condition Report:</strong> <a href="#link_to_report">Click here to see report</a></Card.Text>
                                     
                                 </Card.Body>
@@ -28,10 +26,10 @@ function Condition({condition, allergy, cIntensity, aIntensity}) {
                             <Card className="card4">
                             
                             <Card.Body>
-                                <Card.Title><strong>Allegry:</strong> {allergy}</Card.Title>
-                                <Card.Text><strong>Intensity: </strong> 
-                                    {aIntensity}
-                                </Card.Text>
+                                <Card.Text><strong>Allegry:</strong> {allergy}  <strong>Intensity: </strong> 
+                                    {aIntensity}</Card.Text>
+                                    <Card.Text><strong>Allegry:</strong> Rashes  <strong>Intensity: </strong> 
+                                    Low</Card.Text>
                                 <Card.Text><strong>Allegry Report:</strong> <a href="">Click here to see report</a></Card.Text>
                             </Card.Body>
                             </Card>

@@ -46,7 +46,7 @@ function Patient() {
             <div className="patient__both">
             <div className="patient__middle">
                 {treatment && <Treatment medicine="paracetomol, citizen, glucose, Vicks" disease="Diabetes" description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, officia. Sit inventore beatae atque quas, eveniet quasi rerum eaque, repellendus laboriosam qui voluptatem animi illum mollitia ratione, et pariatur vitae!" doctor="Murli prasad Sharma" hospital="Grant Medical Hospital" />}
-                {condition && <Condition condition="Thyroids" cIntensity="Low" allergy="Khujli" aIntensity="Very High" />}
+                {condition && <Condition condition="Thyroids" cIntensity="Low" allergy="Itchness" aIntensity="Very High" />}
                 {doctor && <DoctorList name="Murli Sharma" phone="+91-8879844352" workplace="Sion Hospital" treatment="Cancer" specialization="NeuroSurgeon" image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNXbC42y8Q0TWjAkZTcjK4v1Jmghv8TpEz2Q&usqp=CAU" />}
             </div>
 

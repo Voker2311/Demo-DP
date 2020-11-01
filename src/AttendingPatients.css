@@ -23,7 +23,7 @@
 .card > img{
     object-fit: cover;
     max-width:260px;
-    max-height:220px;
+    height:220px;
     width:100%;
 }
 

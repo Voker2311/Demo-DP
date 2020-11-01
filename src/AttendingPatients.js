@@ -39,7 +39,7 @@ function AttendingPatients({name, image, phone, disease, allergy, condition, med
                     
                         
                         <div className="card">
-                            <img src={image}
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_3FlCnFuOd9nXxC6_oWIjF1-PqTiILFS9Ig&usqp=CAU"
                                 alt="Not found" />
                             <div className="card__desc">
                                 <h3>Name: {name}</h3>
@@ -57,7 +57,7 @@ function AttendingPatients({name, image, phone, disease, allergy, condition, med
                        
                         
                         <div className="card">
-                            <img src={image}
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTIiMh1ezYJdi7sR5xZiJvllahrN27JN9ddhQ&usqp=CAU"
                                 alt="Not found" />
                             <div className="card__desc">
                                 <h3>Name: {name}</h3>
@@ -76,7 +76,7 @@ function AttendingPatients({name, image, phone, disease, allergy, condition, med
                       
                         
                          <div className="card">
-                             <img src={image}
+                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQa9CEn1zKqQbC_xKD5ZxipbV4KjEbNqX_hgg&usqp=CAU"
                                  alt="Not found" />
                              <div className="card__desc">
                                  <h3>Name: {name}</h3>
@@ -95,7 +95,7 @@ function AttendingPatients({name, image, phone, disease, allergy, condition, med
                      
                                                 
                         <div className="card">
-                            <img src={image}
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-bM9w-UXV2oMSd_d4iUnrZvGWV4HGxEHksw&usqp=CAU"
                                 alt="Not found" />
                             <div className="card__desc">
                                 <h3>Name: {name}</h3>
@@ -114,7 +114,7 @@ function AttendingPatients({name, image, phone, disease, allergy, condition, med
                      
                                                 
                         <div className="card">
-                            <img src={image}
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT3iTWqbkYfyUNyDuc3SW4mWevG1A20KHqgvA&usqp=CAU"
                                 alt="Not found" />
                             <div className="card__desc">
                                 <h3>Name: {name}</h3>
