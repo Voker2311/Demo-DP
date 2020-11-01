@@ -49,6 +49,7 @@ function Doctor() {
             {condition && }
             {doctor && } */}
             {treatment && <AttendingPatients name="Akshay Shinde" image="https://media-exp1.licdn.com/dms/image/C5603AQEMYNRffDs8Xw/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=0NrphqVesQzjjzjHZM4KhpRDNxZoPMS9SeHUl-YNSUI" disease="Night blindness" phone="+917977641778" allergy="Kiwi" condition="Mild" medicine="Crocin, aspirin, Vitamin-C"/>}
+            
             {condition && <SearchPatients name="Ankit Singh" patientId="ANKIT0325" image="https://media-exp1.licdn.com/dms/image/C5103AQGZhHpFNHQUIQ/profile-displayphoto-shrink_400_400/0?e=1609372800&v=beta&t=Va13UBwQpq5s7kd1kLT96sP5WLbF9CELsifnJlN1fWA"  />}
         </div>
 

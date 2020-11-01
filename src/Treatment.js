@@ -13,6 +13,9 @@ function Treatment({disease, description, doctor, hospital, medicine}) {
                             
                             <Card.Body>
                                 <Card.Title><strong>Cured:</strong> {disease}</Card.Title>
+                                <Card.Text><strong>Status: </strong> 
+                                    Done
+                                </Card.Text>
                                 <Card.Text><strong>Treatment: </strong> 
                                     {description}
                                 </Card.Text>
@@ -30,6 +33,9 @@ function Treatment({disease, description, doctor, hospital, medicine}) {
                             
                             <Card.Body>
                                 <Card.Title><strong>Cured:</strong> {disease}</Card.Title>
+                                <Card.Text><strong>Status: </strong> 
+                                on-Going
+                                </Card.Text>
                                 <Card.Text><strong>Treatment: </strong> 
                                     {description}
                                 </Card.Text>
