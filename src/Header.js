@@ -27,7 +27,7 @@ function Header() {
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#features">Contact Us</Nav.Link>
                     </div>
                     <div className="links">
-                        <Link to="/doctor">
+                        <Link >
                         <Nav.Link className="link__name" style={{ color: 'white', fontSize: '16px' }} href="#pricing">Community</Nav.Link>
                   
                         </Link>   
