@@ -15,39 +15,37 @@ import "./Login.css";
 import { useStateValue } from './StateProvider';
 import { MenuItem, Select } from '@material-ui/core';
 import Axios from 'axios';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import axios from "axios";
+
+const api = axios.create({
+    baseURL: 'http://localhost:9000/api',
+});
+
+
 
 function Login(props) {
-    const [{user}, disapatch] = useStateValue();
-    const history = useHistory();
+    const [{user}, dispatch] = useStateValue();
+    const history = useHistory("");
 
     const [email,setEmail] = useState("");
     const [pass,setPass] = useState("");
-    const [data, setData] = useState();
+    const [data, setData] = useState("");
 
-    const add = async () => {
+
+
+    const add = async() => {
         const object = {
-            email:email,
+            email:email, 
             pass:pass,
         };
-        console.log(object);
-        await Axios.post('http://localhost:3001/login', { object: object }).then((response) => {
-            alert("Yooooooo")
-            setEmail("");
-            setPass("");
-            window.location('/')
-            
+        const fetchData = await api.post("/login",{object:object},(res) => {
+            history.replace("/doctor");
         });
-
-        await Axios.get('http://localhost:3001/login').then((res) => {
-            alert("BAblue");
-            setData(res.data);
-            
-        })
     }
 
-    console.log(data)
-
+    console.log(data);
+    
     const { classes } = props;
     return (
         <div className="login">
@@ -56,7 +54,7 @@ function Login(props) {
                 <Avatar className={ classes.avatar }>
                     <LockOutlinedIcon />
                 </Avatar>
-                <Typography variant="h5">Sign In As patient</Typography>
+                <Typography variant="h5">Sign In</Typography>
                 <form className={classes.form}>
                     <FormControl margin="normal" required fullWidth>
                         <InputLabel htmlFor="email">Email</InputLabel>
@@ -67,8 +65,13 @@ function Login(props) {
                         <Input  type="password" name="password" id="password" value={pass} onChange={(e) => setPass(e.target.value)} autoFocus></Input>
                     </FormControl>
                     <FormControlLabel className={classes.remember}variant="h5" label="Remember Me" control={<Checkbox color="primary" />}/>
+                    <Link to={`/${data}`}>
                     <Button onClick={add} variant="contained" type="submit" fullWidth color="primary" className={classes.submit}>SIGN IN</Button>
-                </form>
+                
+                    </Link>
+                    
+                    
+              </form>
             </Paper>
        </main>
     </div>

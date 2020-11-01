@@ -2,8 +2,18 @@ import React from 'react'
 import { Button, Card, CardColumns, CardGroup, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './DoctorList.css';
+import axios from "axios";
+
+const api = axios.create({
+    baseURL: 'http://localhost:9000/api',
+});
+
+const fetchData = api.get("/");
+
 
 function DoctorList({image, name, treatment}) {
+
+    console.log(fetchData);
     return (
         <ListGroup> 
             <ListGroup.Item>

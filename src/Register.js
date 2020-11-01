@@ -4,7 +4,13 @@ import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import styles from './styles/RegisterStyles';
 import "./Register.css";
 import { useStateValue } from './StateProvider';
-import Axios from 'axios';
+import axios from 'axios';
+
+const api = axios.create({
+    baseURL: 'http://localhost:9000/api',
+});
+
+
 
 function Register(props) {
     
@@ -16,10 +22,11 @@ function Register(props) {
     const [passwd2, setPass2] = useState("");
     const [license, setLicense] = useState("");
     const [dob, setDob] = useState("");
+    const [special, setSpecial] = useState("");
     const [{user}, dispatch] = useStateValue()
     const { classes } = props;
     
-    const add = async () => {
+    const add = async() => {
         const object = {
             username:username,
             phone:phone,
@@ -29,21 +36,13 @@ function Register(props) {
             pass2:passwd2,
             license:license,
             dob:dob,
-            user:user, 
+            user:user,
+            special:special 
         };
-        console.log(object);
-        await Axios.post('http://localhost:3001/register', { object: object }).then((response) => {
-            alert("student added");
-            setUsername("");
-            setPhone("");
-            setGender("");
-            setEmail("");
-            setPass1("");
-            setPass2("");
-            setLicense("");
-            setDob("");
-        });
+        const fetchData = await api.post("/register",{object:object});
+        
     }
+
     
     return (
         <div className="register">
@@ -97,6 +96,11 @@ function Register(props) {
                             <InputLabel htmlFor="passwd2" style={{ color: 'black' }}>Confirm Password</InputLabel>
                             <Input type="password" name="passwd2" value={passwd2} onChange={e => setPass2(e.target.value)} spellCheck="false" autoFocus></Input>
                         </FormControl>
+                        {user === "doctor" && <FormControl margin="normal" required fullWidth>
+                            <InputLabel htmlFor="special" style={{ color: 'black' }}>Specialization</InputLabel>
+                            <Input type="text" name="specialization" value={special} onChange={e => setSpecial(e.target.value)} spellCheck="false" autoFocus></Input>
+                        </FormControl>}
+                        
                         {user === "doctor" && <FormControl margin="normal" required fullWidth>
                             <InputLabel htmlFor="passwd3" style={{ color: 'black' }}>Licence ID</InputLabel>
                             <Input type="text" name="licence"  value={license} onChange={e => setLicense(e.target.value)} spellCheck="false" autoFocus></Input>
